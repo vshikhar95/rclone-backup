@@ -8,11 +8,16 @@
 </head>
 <body>
 <h1>rclone-backup</h1>
-<p>rclone-backup is a personal, single-user OAuth client for <a href="https://rclone.org">rclone</a>. Its owner uses it to store
-end-to-end encrypted backups (made with <a href="https://restic.net">restic</a>) in his own Google Drive.</p>
-<p>It is not a public service. No one else uses it, and it has no sign-up.</p>
-<p>It requests only the Google Drive <code>drive.file</code> scope, so it can see and manage only the files it created itself,
-not the rest of the Drive.</p>
+<p>This page covers two personal, single-user Google OAuth clients. Each lives in its own Google Cloud project. Neither is a public
+service: no one else uses them, and they have no sign-up.</p>
+<h2>rclone-backup</h2>
+<p>An OAuth client for <a href="https://rclone.org">rclone</a>. Its owner uses it to store end-to-end encrypted backups (made with
+<a href="https://restic.net">restic</a>) in his own Google Drive. It requests only the Google Drive <code>drive.file</code> scope, so it
+can see and manage only the files it created itself, not the rest of the Drive.</p>
+<h2>finance-fetch</h2>
+<p>A script on the owner's computer that finds bank, card and investment statement emails in his own Gmail accounts and downloads
+their attachments to that computer, for his personal bookkeeping. It requests only the read-only Gmail scope
+(<code>gmail.readonly</code>). It cannot send, change or delete mail.</p>
 <p><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a> · Contact: <a href="https://github.com/vshikhar95">github.com/vshikhar95</a></p>
 </body>
 </html>
